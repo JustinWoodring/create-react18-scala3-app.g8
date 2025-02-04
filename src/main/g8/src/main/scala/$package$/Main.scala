@@ -1,13 +1,12 @@
 package $package$
 
+import $package$.facade.ReactDOMClient
+
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSExportTopLevel, JSImport}
 import scala.scalajs.LinkingInfo
-
-import slinky.core._
-import slinky.web.ReactDOM
+import slinky.core.*
 import slinky.hot
-
 import org.scalajs.dom
 
 @JSImport("resources/index.css", JSImport.Default)
@@ -18,7 +17,7 @@ object Main {
   val css = IndexCSS
 
   @JSExportTopLevel("main")
-  def main(): Unit = {
+  def main(args: Array[String]): Unit = {
     if (LinkingInfo.developmentMode) {
       hot.initialize()
     }
@@ -30,6 +29,7 @@ object Main {
       elem
     }
 
-    ReactDOM.render(App(), container)
+    val root = ReactDOMClient.createRoot(container)
+    root.render(App().asInstanceOf[Component])
   }
 }
