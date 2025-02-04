@@ -24,9 +24,7 @@ module.exports = {
         use: [
           {
             loader: 'file-loader',
-            query: {
-              name: 'static/media/[name].[hash:8].[ext]'
-            }
+            ident: 'static/media/[name].[hash:8].[ext]'
           }
         ]
       }
