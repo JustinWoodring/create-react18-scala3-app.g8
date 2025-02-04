@@ -5,7 +5,7 @@ Create [React](https://facebook.github.io/react/) apps in [Scala](https://scala-
 Make sure you have SBT and NPM installed.
 
 ```sh
-sbt new JustinWoodring/create-react18-scala3-app.g8
+sbt new JustinWoodring/create-react19-scala3-app.g8
 ... follow instructions to create your app
 
 cd my-app/
@@ -30,7 +30,7 @@ To use create-react-scala-app, you'll need SBT, which is the primary build tool,
 **This tool doesn’t assume a Node backend.** The Node installation is only required for Create React Scala App itself.
 
 ### Creating an App
-To create a new app, run: `sbt new JustinWoodring/create-react18-scala3-app.g8`, follow the instructions that follow, then `cd my-app`.
+To create a new app, run: `sbt new JustinWoodring/create-react19-scala3-app.g8`, follow the instructions that follow, then `cd my-app`.
 
 This will create a folder `my-app` inside the current folder.
 Inside that directory, it will generate the initial project structure:
