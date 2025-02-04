@@ -21,7 +21,7 @@ def App() : ReactElement = {
     div(className := "App")(
       header(className := "App-header")(
         img(src := ReactLogo.asInstanceOf[String], className := "App-logo", alt := "logo"),
-        h1(className := "App-title")("Welcome to (with Scala.js!)")
+        h1(className := "App-title")("Welcome to React (with Scala.js!)")
       ),
       p(className := "App-intro")(
         "To get started, edit ", code("App.scala"), " and save to reload."
