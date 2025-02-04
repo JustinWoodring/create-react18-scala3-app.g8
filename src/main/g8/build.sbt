@@ -4,8 +4,8 @@ name := "$name$"
 
 scalaVersion := "3.6.3"
 
-Compile / npmDependencies += "react" -> "18.0.0"
-Compile / npmDependencies += "react-dom" -> "18.0.0"
+Compile / npmDependencies += "react" -> "19.0.0"
+Compile / npmDependencies += "react-dom" -> "19.0.0"
 Compile / npmDependencies += "react-proxy" -> "1.1.8"
 
 Compile / npmDevDependencies += "file-loader" -> "6.2.0"
